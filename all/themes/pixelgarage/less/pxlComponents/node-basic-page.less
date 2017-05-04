@@ -1,0 +1,46 @@
+/*
+ *  Node basic-page component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-page.view-mode-full,
+.node.node-page.view-mode-default {
+  >.row {
+    >div.col-sm-12 {
+      max-width: 800px;
+      display: block;
+      text-align: center;
+      float: none;
+      margin: 0 auto;
+
+      >.field-name-title {
+        h2 {
+          #pxl-mixins.title();
+        }
+      }
+
+      >.field-name-field--ber {
+        .field-item {
+          #pxl-mixins.wysiwyg-body();
+          #pxl-mixins.hyphenate();
+        }
+      }
+
+      >.field-name-body {
+        margin: 0 0 80px;
+        #pxl-mixins.wysiwyg-body();
+      }
+
+    }
+  }
+}

@@ -1,0 +1,78 @@
+/* --------------------------------------------------
+ * Pixelgarage fonts
+ * --------------------------------------------------*/
+//
+// webfont licences
+//@import '../fonts/BrandonGrotesque/BrandonGrotesque-Licence.css';
+
+//
+// Google fonts
+//@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+//
+// Awesome icon font
+@import '../fonts/font-awesome/less/font-awesome';
+@fa-font-path: '@{pxl-font-path}/font-awesome/fonts'; // override fa font path (lazy loading)
+
+//
+// Define customer specific fonts
+@pxl-font-path: '../fonts';
+
+// icon font
+@pxl-icon-font: 'fontawesome';
+
+// title font
+@pxl-title-font: 'Relay-Regular',sans-serif;
+@pxl-subtitle-font: 'Relay-Regular',sans-serif;
+
+// text fonts
+@pxl-text-font: 'Relay-Regular', sans-serif;
+@pxl-text-font-light: 'Relay-Light',sans-serif;
+@pxl-text-font-medium: @pxl-text-font;
+@pxl-text-font-bold: 'Relay-Light',sans-serif;
+@pxl-text-font-italic: 'Relay-Light',sans-serif;
+@pxl-text-font-light-italic: 'Relay-Light',sans-serif;
+@pxl-text-font-medium-italic: @pxl-text-font;
+@pxl-text-font-bold-italic: 'Relay-Light',sans-serif;
+
+// form fonts
+@pxl-form-font: @pxl-text-font;
+
+// overrides
+@font-family-base: @pxl-text-font;
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+
+//
+// font faces
+//
+@font-face {
+  font-family: 'Relay-Regular';
+  src: url('@{pxl-font-path}/Relay-Regular/Relay-Regular.eot');
+  src: url('@{pxl-font-path}/Relay-Regular/Relay-Regular.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/Relay-Regular/Relay-Regular.woff2') format('woff2'),
+  url('@{pxl-font-path}/Relay-Regular/Relay-Regular.woff') format('woff'),
+  url('@{pxl-font-path}/Relay-Regular/Relay-Regular.ttf') format('truetype'),
+  url('@{pxl-font-path}/Relay-Regular/Relay-Regular.svg#Relay-Regular') format('svg');
+}
+@font-face {
+  font-family: 'Relay-Light';
+  src: url('@{pxl-font-path}/Relay-Light/Relay-Light.eot');
+  src: url('@{pxl-font-path}/Relay-Light/Relay-Light.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/Relay-Light/Relay-Light.woff2') format('woff2'),
+  url('@{pxl-font-path}/Relay-Light/Relay-Light.woff') format('woff'),
+  url('@{pxl-font-path}/Relay-Light/Relay-Light.ttf') format('truetype'),
+  url('@{pxl-font-path}/Relay-Light/Relay-Light.svg#Relay-Light') format('svg');
+}
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url('@{pxl-font-path}/BrandonGrotesque/BrandonGrotesque.eot');
+  src: url('@{pxl-font-path}/BrandonGrotesque/BrandonGrotesque.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/BrandonGrotesque/BrandonGrotesque.woff2') format('woff2'),
+  url('@{pxl-font-path}/BrandonGrotesque/BrandonGrotesque.woff') format('woff'),
+  url('@{pxl-font-path}/BrandonGrotesque/BrandonGrotesque.ttf') format('truetype'),
+  url('@{pxl-font-path}/BrandonGrotesque/BrandonGrotesque.svg#BrandonGrotesque') format('svg');
+}
+
